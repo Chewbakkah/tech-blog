@@ -31,12 +31,6 @@ Comment.init(
         model: 'post',
         key: 'id'
       }
-    },
-    created_at: {
-      type: TIMESTAMP,
-      default: CURRENT_TIMESTAMP,
-      onUpdate: CURRENT_TIMESTAMP,
-      allowNull: false
     }
   },
   {

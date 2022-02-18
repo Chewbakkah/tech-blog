@@ -16,7 +16,7 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    post_contents: {
+    post_content: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -26,12 +26,6 @@ Post.init(
         model: 'user',
         key: 'id'
       }
-    },
-    created_at: {
-      type: TIMESTAMP,
-      default: CURRENT_TIMESTAMP,
-      onUpdate: CURRENT_TIMESTAMP,
-      allowNull: false
     }
   },
   {
